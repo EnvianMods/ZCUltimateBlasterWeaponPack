@@ -25,7 +25,7 @@ gun's own Battlefront II pieces where it has them).
 - **The ZCSDK Runtime 0.11 or later** (required for the current game version, build 197649). The new Armoury parts are listed only after the Runtime's rescan; without it the game loads the pack but the
   new blasters do not appear. Get it with **Mod Command** (from our GitHub or Discord), or download the Runtime directly:
   https://github.com/EnvianMods/ZCSDK-Runtime-Release
-- **Optional: ZCUnlocked** (1.4.72 or later). Its Bolt Color row recolours our bolts.
+- **Fully compatible with ZCUnlocked** (1.4.72 or later, optional): its Bolt Color row recolours these blasters' bolts, in the Armoury and in missions.
 
 ## Install
 **With Mod Command:** install `ZCUltimateBlasterWeaponPack_v1.0.0_gfp.zip`.
@@ -36,8 +36,6 @@ gun's own Battlefront II pieces where it has them).
 
 **Uninstall:** with the game closed, delete `SWZeroCompany\Mods\ZCUltimateBlasterWeaponPack`. A character holding one of these weapons
 falls back to a stock weapon.
-
-**Do not also install the ZCUnlocked add-on edition of this pack.** Use one edition or the other.
 
 ## Using it
 Armoury → pick an operator → the weapon slot → CHANGE (the new models sit on the Pistol / Rifle / Repeater / Longarm shelves) →
