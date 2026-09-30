@@ -1,0 +1,46 @@
+{
+  "id": "ZCUltimateBlasterWeaponPack",
+  "name": "ZC Ultimate Blaster Weapon Pack",
+  "edition": "standalone",
+  "version": "1.0.0",
+  "tag": "v1.0.0",
+  "branch": "main",
+  "asset": "ZCUltimateBlasterWeaponPack_v1.0.0_gfp.zip",
+  "url": "https://github.com/EnvianMods/ZCUltimateBlasterWeaponPack/releases/download/v1.0.0/ZCUltimateBlasterWeaponPack_v1.0.0_gfp.zip",
+  "release": "https://github.com/EnvianMods/ZCUltimateBlasterWeaponPack/releases/tag/v1.0.0",
+  "published": "2026-09-30T04:05:23Z",
+  "sha256": "c684f8adc84303eb61dc6e6ffa20184e845c6a3dc765d76172eebec1ff0e1181",
+  "md5": "cc8d66c37de2cb99d5aff676d04f06dd",
+  "size": 362622309,
+  "gameBuild": "197649",
+  "platform": "Steam",
+  "author": "Envian",
+  "nexus": {
+    "game": "starwarszerocompany",
+    "modId": 279
+  },
+  "requires": [
+    {
+      "id": "ZCSDKRuntime",
+      "name": "ZCSDK Runtime",
+      "minVersion": "0.11",
+      "url": "https://github.com/EnvianMods/ZCSDK-Runtime-Release",
+      "required": true
+    }
+  ],
+  "optional": [
+    {
+      "id": "ZCUnlocked",
+      "name": "ZCUnlocked",
+      "minVersion": "1.4.72",
+      "required": false,
+      "note": "optional: its Bolt Color row recolours the bolts"
+    }
+  ],
+  "otherEdition": {
+    "edition": "zcunlocked-addon",
+    "repo": "https://github.com/EnvianMods/UltimateBlasterZCUnlockedAddon",
+    "nexusModId": 280,
+    "note": "never install both editions"
+  }
+}
