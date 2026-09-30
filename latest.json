@@ -8,10 +8,10 @@
   "asset": "ZCUltimateBlasterWeaponPack_v1.0.0_gfp.zip",
   "url": "https://github.com/EnvianMods/ZCUltimateBlasterWeaponPack/releases/download/v1.0.0/ZCUltimateBlasterWeaponPack_v1.0.0_gfp.zip",
   "release": "https://github.com/EnvianMods/ZCUltimateBlasterWeaponPack/releases/tag/v1.0.0",
-  "published": "2026-09-30T04:05:23Z",
-  "sha256": "c684f8adc84303eb61dc6e6ffa20184e845c6a3dc765d76172eebec1ff0e1181",
-  "md5": "cc8d66c37de2cb99d5aff676d04f06dd",
-  "size": 362622309,
+  "published": "2026-09-30T07:49:54Z",
+  "sha256": "8fe8a71f0cc550ddef94763a93391cc9d597784b8985c88da8b1dc172f4b239c",
+  "md5": "280cf96e1c493ca49a094bbd78513c9e",
+  "size": 362622294,
   "gameBuild": "197649",
   "platform": "Steam",
   "author": "Envian",
@@ -36,11 +36,5 @@
       "required": false,
       "note": "optional: its Bolt Color row recolours the bolts"
     }
-  ],
-  "otherEdition": {
-    "edition": "zcunlocked-addon",
-    "repo": "https://github.com/EnvianMods/UltimateBlasterZCUnlockedAddon",
-    "nexusModId": 280,
-    "note": "never install both editions"
-  }
+  ]
 }
