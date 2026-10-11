@@ -1,17 +1,25 @@
-# ZC Ultimate Blaster Weapon Pack 1.0.0 (standalone)
+# ZC Ultimate Blaster Weapon Pack 1.1.0 (standalone)
 
-**54 new blasters for STAR WARS Zero Company**, each a real weapon of its own in the Armoury, with its own model, name, icon, stats and
-bolt colour. 39 come from Star Wars Battlefront II (2017) and 15 from Star Wars Jedi: Survivor.
+**54 new blasters for STAR WARS Zero Company**, each a real weapon of its own in the Armory, with its own model, name, icon, stats,
+bolt color and firing sound. 39 come from Star Wars Battlefront II (2017) and 15 from Star Wars Jedi: Survivor.
 
-The lightsabers are a separate mod, **ZC Complete Saber Weapon Pack** (coming later).
+The lightsabers are a separate mod, **ZC Ultimate Saber Weapon Pack** (coming later).
 
-- Version 1.0.0, for game build 197649 (Steam).
+- Version 1.1.0, for game build 197649 (Steam).
 - Author: Envian. Built with the Zero Company Mod SDK.
 
 ## What you get
 Each blaster is a new MODEL on the Pistol, Rifle, Repeater or Longarm shelf, beside the game's own guns. It has its own meshes, eight
-paint patterns on the body and barrel, its own numbers and bolt colour, and it takes the game's attachment modifications (drawn with the
+paint patterns on the body and barrel, its own numbers and bolt color, and it takes the game's attachment modifications (drawn with the
 gun's own Battlefront II pieces where it has them).
+
+- **Its own real firing sound**, from the game its model comes from, in a sound bank of its own. 36 guns fire their own Star Wars
+  Battlefront II (2017) recordings. The 15 Jedi: Survivor blasters fire Jedi: Survivor's own shots: Bode's Blaster and the Caij Vanda
+  Blaster have their own, and the other 13 (builds of Cal's blaster in that game) share Cal's default blaster shot. The DC-15A and
+  DC-15S use Jedi: Survivor's DC-15 sound, and the Bryar Pistol its own sound from Star Wars Battlefront (2015). Rifles and repeaters
+  play a sound for every bolt, and the longarms are raised to the loudness of the game's own Valken-38X.
+- **Full bursts.** The rifles and repeaters fire their full bursts, with varied burst patterns like the game's own guns, without
+  lowering the gun mid-burst. The Z-6 Rotary Cannon fires its full burst from the hip.
 
 - **Pistols (12):** Bryar Pistol, SE-44, Blurrg-1120, DL-44, DH-17, SE-14C, RK-3, EC-17, DC-17, Glie-44, Relby-K23, Defender Sporting Blaster
 - **Rifles (15):** DC-15A (BF2), DC-15S, DC-17M, ST-W48, E-11D, EE-3, E-11, A280, CR-2, F-11D, E-5, A280C, EE-4, EL-16, CA-87 Shock Blaster
@@ -22,48 +30,89 @@ gun's own Battlefront II pieces where it has them).
 
 ## Requirements
 - STAR WARS Zero Company on Steam.
-- **The ZCSDK Runtime 0.11 or later** (required for the current game version, build 197649). The new Armoury parts are listed only after the Runtime's rescan; without it the game loads the pack but the
-  new blasters do not appear. Get it with **Mod Command** (from our GitHub or Discord), or download the Runtime directly:
-  https://github.com/EnvianMods/ZCSDK-Runtime-Release
-- **Fully compatible with ZCUnlocked** (1.4.72 or later, optional): its Bolt Color row recolours these blasters' bolts, in the Armoury and in missions.
+- **UE4SS for Star Wars Zero Company** ([Nexus mod 9](https://www.nexusmods.com/starwarszerocompany/mods/9), by Vercadi): required by
+  the Runtime. Install it first.
+- **ZCSDK Runtime 0.13** (0.11 or later works on Windows; 0.13 is recommended, and Linux / Steam Deck needs it): required for the
+  current game version, build 197649. The new Armory parts are listed only after the Runtime's rescan; without it the game loads the
+  pack, but the new blasters are not listed in the Armory. Get it with **Mod Command**, or download it directly:
+  https://github.com/EnvianMods/ZCSDK-Runtime-Release/releases/latest
+- **Fully compatible with ZCUnlocked** (1.4.72 or later, optional): its Bolt Color row recolors these blasters' bolts, in the Armory and in missions.
+- The download is about 539 MB (1.0.0: about 363 MB): it now carries the sounds, compressed (ADPCM).
 
 ## Install
-**With Mod Command:** install `ZCUltimateBlasterWeaponPack_v1.0.0_gfp.zip`.
+**With Mod Command (recommended):**
+1. Use the latest Mod Command.
+2. Settings > **ZCSDK Runtime** > Install / Update. It installs UE4SS for Star Wars Zero Company first if needed, then the Runtime.
+3. Install `ZCUltimateBlasterWeaponPack_v1.1.0_gfp.zip`.
 
-**By hand (the game closed):** extract the zip's `ZCUltimateBlasterWeaponPack` folder into
-`...\Star Wars Zero Company\SWZeroCompany\Mods\`, so that you have
-`SWZeroCompany\Mods\ZCUltimateBlasterWeaponPack\ZCUltimateBlasterWeaponPack.uplugin`. Start the game.
+**By hand (the game closed):**
+1. **UE4SS first:** install [UE4SS for Star Wars Zero Company](https://www.nexusmods.com/starwarszerocompany/mods/9) as its page
+   describes: extract its full zip into `SWZeroCompany\Binaries\Win64\`, so `dwmapi.dll` and a `ue4ss` folder sit next to
+   `SWZeroCompany.exe`.
+2. **Then the ZCSDK Runtime:** from the [latest Runtime release](https://github.com/EnvianMods/ZCSDK-Runtime-Release/releases/latest),
+   download the zip with "_manual" in its name (now `ZCSDKRuntime_v0.13_manual.zip`; the other zip is for Mod Command) and extract it
+   into the **same** `SWZeroCompany\Binaries\Win64\` folder. Its `ue4ss` folder merges into UE4SS's. Do **not** extract it into
+   `ue4ss\Mods`. After this, either one can be updated without reinstalling the other.
+3. **This mod:** extract the zip's `ZCUltimateBlasterWeaponPack` folder into `...\Star Wars Zero Company\SWZeroCompany\Mods\`, so that
+   you have `SWZeroCompany\Mods\ZCUltimateBlasterWeaponPack\ZCUltimateBlasterWeaponPack.uplugin`. Start the game.
+
+**Updating from Runtime 0.10 - 0.12?** Mod Command: Settings > ZCSDK Runtime > **Reinstall**. By hand: extract the latest manual zip,
+then **reinstall UE4SS (mod 9) and let it replace all files**. The older Runtimes overwrote three of UE4SS's own files, which makes
+ZCUnlocked report an "old build of UE4SS".
+
+**Updating from 1.0.0:** install 1.1.0 over it (Mod Command), or with the game closed delete
+`SWZeroCompany\Mods\ZCUltimateBlasterWeaponPack` and extract the new one. Saves are safe: no weapon names or tags changed, so your
+equipped blasters and paints carry over.
+
+**Linux / Steam Deck (Proton):** use Runtime 0.13 or later, and add the Steam launch option given in
+[the Runtime's README](https://github.com/EnvianMods/ZCSDK-Runtime-Release).
+
+**Check it worked:** `ue4ss\ZCSDKLoader.log` has a `manifest:` line for ZCUltimateBlasterWeaponPack. With ZCUnlocked,
+`ue4ss\Mods\ZCUnlocked\dlls\ZCUnlocked.log` should say `verdict=ok`; `verdict=old` means reinstall UE4SS (mod 9). **Blasters not
+listed?** The Runtime is missing or not loaded; see [the Runtime's README](https://github.com/EnvianMods/ZCSDK-Runtime-Release) for
+troubleshooting.
 
 **Uninstall:** with the game closed, delete `SWZeroCompany\Mods\ZCUltimateBlasterWeaponPack`. A character holding one of these weapons
 falls back to a stock weapon.
 
 ## Using it
-Armoury → pick an operator → the weapon slot → CHANGE (the new models sit on the Pistol / Rifle / Repeater / Longarm shelves) →
-CUSTOMIZE for paint and colours. Save after changing weapons.
+Armory → pick an operator → the weapon slot → CHANGE (the new models sit on the Pistol / Rifle / Repeater / Longarm shelves) →
+CUSTOMIZE for paint and colors. Save after changing weapons.
 
-## Known limits in 1.0
-- **The Z-6** fires from the shoulder like the game's repeaters.
+## Known limits
+- **Long echoes:** the Jedi: Survivor and DC-15 sounds keep their game's outdoor echo, so they ring out longer than the Battlefront II
+  sounds.
+- **The Z-6** fires from the hip for the shot itself. While aiming, and while waiting in overwatch, it is still held at the shoulder.
 - **DL-44 (Survivor):** its scope sits on the gun's left side.
-- **With ZCUnlocked's Bolt Color row on,** a paint finish (material type, e.g. metallic) and a bolt colour can't be equipped at the same time. They share the second colour slot, so picking one drops the other. This affects stock blasters too and has been reported to ZCUnlocked's author. `boltcolor=0` in ZCUnlocked's `settings.ini` under `[Blasters]` restores the normal finish behaviour (without Bolt Color).
-- Overrides: the pack replaces the game's 16 shared attachment palettes (Barrel / Cell / Scope / Stock 02–05) to add its guns' entries.
-  Another mod that replaces the same files conflicts with it; the one loaded last wins.
+- **With ZCUnlocked's Bolt Color row on,** a paint finish (material type, e.g. metallic) and a bolt color can't be equipped at the same time. They share the second color slot, so picking one drops the other. This affects stock blasters too and has been reported to ZCUnlocked's author. `boltcolor=0` in ZCUnlocked's `settings.ini` under `[Blasters]` restores the normal finish behavior (without Bolt Color).
+- **Conflicts:** the pack replaces the game's 16 shared attachment palettes (Barrel / Cell / Scope / Stock 02–05) to add its guns'
+  entries, and the game's firing animation table (`DT_AG_TypicalShot_MASTER`) so that each rifle and repeater plays its full burst
+  animations. Another mod that replaces any of the same files conflicts with it; the one loaded last wins.
 
 ## Credits
-
 - **Silent_SFM**, our Discord member, for decompiling the game and collecting all of the assets.
+- **Sounds:** 36 guns use ripped Star Wars Battlefront II (2017) weapon audio from the "StarWarsPackage" collection, collected by
+  Silent_SFM. The other 18 use sound effects from Star Wars Jedi: Survivor and Star Wars Battlefront (2015).
 - **Community model creators.** All 54 blasters in this pack are models from the two games below; it contains no community-made
-  models. The community-made lightsabers are credited in the ZC Complete Saber Weapon Pack.
+  models. The community-made lightsabers are credited in the ZC Ultimate Saber Weapon Pack.
 - **Source library:** the "StarWarsPackage" (Star Wars Virtual Production Package) Google Drive project and its contributors.
 - **Envian**: the mod's author. Built with the **Zero Company Mod SDK (ZCSDK)** by Envian.
+- **UE4SS for Star Wars Zero Company** by Vercadi.
 - **ZCUnlocked** by SmexyXey (optional companion).
 - **STAR WARS Zero Company** by Bit Reactor / Electronic Arts.
 
 ## Sources and legal
 - The original models and textures are from **Star Wars Battlefront II (2017)** (© Electronic Arts / DICE) and **Star Wars Jedi:
-  Survivor** (© Electronic Arts / Respawn Entertainment). Star Wars © Lucasfilm Ltd. / Disney. This is a non-commercial, fan-made mod,
-  not affiliated with or endorsed by any of them.
+  Survivor** (© Electronic Arts / Respawn Entertainment). The sound effects are from Star Wars Battlefront II (2017) and **Star Wars Battlefront (2015)** (© Electronic Arts / DICE) and
+  from **Star Wars Jedi: Survivor** (© Electronic Arts / Respawn Entertainment); they remain the property of their owners. Star
+  Wars © Lucasfilm Ltd. / Disney. This is a non-commercial, fan-made mod, not affiliated with or endorsed by any of them.
 
 Free to use in your own games and videos. Please check with me (Envian) first before re-uploading, modifying, or including any part of this pack in another mod.
 
 ## Changelog
-- **1.0.0** — first public release: 54 blasters (39 Battlefront II, 15 Jedi: Survivor).
+- **1.1.0**: every blaster has its own real firing sound from its source game (Star Wars Battlefront II (2017) for 36 guns; Jedi:
+  Survivor for the 15 Survivor blasters and the DC-15A / DC-15S; Star Wars Battlefront (2015) for the Bryar Pistol), one compressed
+  (ADPCM) sound bank per gun. Rifles and repeaters play a sound per bolt; longarms are raised to the stock Valken-38X's loudness. Rifles
+  and repeaters no longer lower the gun mid-burst: full bursts with varied burst patterns, like the game's own guns. The Z-6 Rotary
+  Cannon fires its full burst from the hip. Bigger download (the sounds). Replaces 1.0.0; saves are safe.
+- **1.0.0**: first public release: 54 blasters (39 Battlefront II, 15 Jedi: Survivor).
