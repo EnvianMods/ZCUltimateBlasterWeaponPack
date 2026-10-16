@@ -97,9 +97,9 @@ Rotary Blaster Cannon), then CUSTOMIZE for paint and colors. Save after changing
   animations. Another mod that replaces any of the same files conflicts with it; the one loaded last wins.
 
 ## Credits
-- **Silent_SFM**, our Discord member, for decompiling the game and collecting all of the assets, and for the Z-6 animation work.
-- **Sounds:** 36 guns use ripped Star Wars Battlefront II (2017) weapon audio from the "StarWarsPackage" collection, collected by
-  Silent_SFM. The other 18 use sound effects from Star Wars Jedi: Survivor and Star Wars Battlefront (2015).
+- **Silent_SFM**, our Discord member, for the original rip of the game assets.
+- **Sounds:** 36 guns use ripped Star Wars Battlefront II (2017) weapon audio from the "StarWarsPackage" collection.
+  The other 18 use sound effects from Star Wars Jedi: Survivor and Star Wars Battlefront (2015).
 - **Community model creators.** All 54 blasters in this pack are models from the two games below; it contains no community-made
   models. The community-made lightsabers are credited in the ZC Ultimate Saber Weapon Pack.
 - **Source library:** the "StarWarsPackage" (Star Wars Virtual Production Package) Google Drive project and its contributors.
@@ -121,7 +121,7 @@ Free to use in your own games and videos. Please check with me (Envian) first be
 - **1.2.0**: the Z-6 Rotary Cannon has its own Armory class, "Rotary Blaster Cannon" (re-equip it after updating, then save). The Z-6
   is held at the hip while idle, in Overwatch, aiming, turning and firing, with stronger recoil per bolt and the feet planted. The pack
   is quieter, closer to the game's own blasters; the T-7 was turned down the most. Updated weapon icons. Known issue: the Z-6 is still
-  at the shoulder while crouching and running (fix planned for 1.2.1). Z-6 animation work by Silent_SFM.
+  at the shoulder while crouching and running (fix planned for 1.2.1).
 - **1.1.0**: every blaster has its own real firing sound from its source game (Star Wars Battlefront II (2017) for 36 guns; Jedi:
   Survivor for the 15 Survivor blasters and the DC-15A / DC-15S; Star Wars Battlefront (2015) for the Bryar Pistol), one compressed
   (ADPCM) sound bank per gun. Rifles and repeaters play a sound per bolt. Rifles and repeaters no longer lower the gun mid-burst: full
